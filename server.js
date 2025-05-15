@@ -34,8 +34,6 @@ app.get("/api/:rapperName", (req, res) => {
   //   res.json(rappers);
 });
 
-// app.listen(process.env.PORT || PORT, () => {
-//   console.log(`The server is running on ${PORT} go catch it!`);
-// });
-
-module.exports = app;
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`The server is running on ${PORT} go catch it!`);
+});
